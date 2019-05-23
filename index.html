@@ -1,47 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title> Initab </title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
-  <title> Fake Initab </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
-
-<body>
-  <div class="grid-container">
-    <div class="section1">
+  <div class="row">
+    <div class="col-sm-2 text-uppercase navbar"> <!-- menu-->
       <ul>
-      <li><a href="default.asp" class="blue"><span class="iconborder"><i class="fa fa-wrench icon" aria-hidden="true" id="rcorners1"></i> </span>Settings</a></li>
-      <li><a href="news.asp" class="navbar green"><i class="fa fa-code icon" aria-hidden=true></i> Gists</a></li>
-      <li><a href="" class="orange"><i class="fa fa-stack-overflow icon" aria-hidden="true"></i> Stack Overflow</a></li>
-      <li><a href="about.asp" class="navbar pink"><i class="fa fa-line-chart icon" aria-hidden="true"></i> Trending</a></li>
-      <li><a href="about.asp" class="navbar purple"><i class="fa fa-pencil icon" aria-hidden="true"></i> Scratch Pad</a></li>
-      <li><a href="about.asp" class="navbar white"><i class="fa fa-lightbulb-o icon" aria-hidden="true"></i></i> Playground</a></li>
-      <li><a href="about.asp" class="navbar yellow"><i class="fa fa-question icon"></i> Help/Intro</a></li>
-    </ul>
+        <li class="list-group-flush blueicon "><span class="iconborder blueiconborder"><i class="fa fa-wrench icon" aria-hidden="true"></i></span>  Settings</li>
+        <li class="list-group-flush greenicon"><span class="iconborder greeniconborder"><i class="fa fa-code icon" aria-hidden=true></i></span> Gists</li>
+        <li class="list-group-flush orangeicon"><span class="iconborder orangeiconborder"><i class="fa fa-stack-overflow icon" aria-hidden="true"></i></span>     Stack Overflow</li>
+        <li class="list-group-flush pinkicon"><span class="iconborder pinkiconborder"><i class="fa fa-line-chart icon" aria-hidden="true"></i></span> Trending</li>
+        <li class="list-group-flush purpleicon"><span class="iconborder purpleiconborder"><i class="fa fa-pencil icon" aria-hidden="true"></i></span> Scratch Pad</li>
+        <li class="list-group-flush whiteicon"><span class="iconborder whiteiconborder"><i class="fa fa-lightbulb-o icon" aria-hidden="true"></i></span>   Playground</li>
+        <li class="list-group-flush yellowicon"><span class="iconborder yellowiconborder"><i class="fa fa-question icon"></i></span>    Help/Intro</li>
+      </ul>
     </div>
-    <div class="section2">
-      <h1>POPULAR ON R/JAVASCRIPT</h1>
-      <p>Have data? Dislike data aggregation, manipulation & query writing? Meet Qlik Core, an analytics component by Qlik.</p>
-      <h2>Try it today.</h2>
-      <h3>Sponsored by Qlik</h3>
-
-      <p> SOLID Principles: The Software Developer's Framework to Robust &amp; Maintainable Code
-      Posted by: u/stemmlerjs
-      Reddit Score: 35
+    <div class="col-sm-3 scrolly">
+      <h5 class="feedheading"><i class="fa fa-reddit" aria-hidden="true"></i> Popular on R/Javascript</h5>
+      <h5> Managing a Secure JSON Web Token Implementation</p>
+      Posted by: u/FanielDanara
+      Reddit Score: 103
       Link to Comments
-      Did you know you can style console.log text?
-      Posted by: u/ya3ya6
-      Reddit Score: 362
-      Help needed with a quote generator (begginer)
-      Posted by: u/edmontom
-      Reddit Score: 2 </p>
+      JavaScript Clean Code - Best Practices - based on Robert C. Martin's book Clean Code
+      Posted by: u/PMilos
+      Reddit Score: 20
+      Link to Comments
+      NaN can be used as an array index
+      Posted by: u/FavoriteColorFlavor
+      Reddit Score: 28
+      Not another Javascript Framework
+      Posted by: u/blbbrayan
+      Reddit Score: 1
+      Link to Comments
+
     </div>
-    <div class="section3"></div>
-    <div class="clock"></div>
-    <div class="section4"></div>
+    <div class="col-sm-4">
+      <h5 class="feedheading"><i class="fa fa-clock-o"></i> Relevant Javascript history</h5>
+      <div style="overflow-y:auto;">
+    <table>
+      <tr>
+      <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"></td>
+      <td class="javahistorytitle">Basic JavaScript</td>
+      <td>freeCodeCamp</td>
+      <td class="jvhistorylog">7 hours ago</td>
+      </tr>
+      <tr>
+      <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"></td>
+      <td class="javahistorytitle">Basic JavaScript</td>
+      <td>freeCodeCamp</td>
+      <td class="jvhistorylog">7 hours ago</td>
+      </tr>
+      <tr>
+      <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"></td>
+      <td class="javahistorytitle">Basic JavaScript</td>
+      <td>freeCodeCamp</td>
+      <td class="jvhistorylog">7 hours ago</td>
+      </tr>
+      <tr>
+      <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"></td>
+      <td class="javahistorytitle">Basic JavaScript</td>
+      <td>freeCodeCamp</td>
+      <td class="jvhistorylog">7 hours ago</td>
+      </tr>
+      <tr>
+      <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"></td>
+      <td class="javahistorytitle">Basic JavaScript</td>
+      <td>freeCodeCamp</td>
+      <td class="jvhistorylog">7 hours ago</td>
+      </tr>
+    </table>
   </div>
 
+</div>
+    <div class="col-sm-3">
+  <h5 class="feedheading"><i class="fa fa-github" aria-hidden="true"></i> GITHUB ISSUES HISTORY </h5>
+    switch to gitlab
+ISSUESPULL REQUESTS
+Repo: adobe/brackets
+Issue #8671
+CSS and HTML not linking...
+
+Repo: atom/atom
+Issue #12644
+how can i connect my github account in atom
+
+Repo: smellaphant/github-slideshow
+Issue #2
+Your first contribution
+
+Repo: smellaphant/github-slideshow
+Issue #1
+Getting Started with GitHub</p>
+
+
+    </div>
+  </div>
+</div>
+<body>
 
 </body>
 

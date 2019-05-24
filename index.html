@@ -41,6 +41,7 @@
       </script>
 
 </head>
+<body>
   <div class="row-fluid">
 
 <!-- Navigation bar, Column 1 (made of 2 units)-->
@@ -58,25 +59,16 @@
       <img src="https://initab.com/assets/images/initab_logo_white.png" href="initab.com" class="initabicon" width="42" height="42">
     </div>
 <!-- Reddit for Javascript, Column 2 (made of 3 units)-->
-    <div class="col-sm-2 scrolly">
+    <div class="col-sm-2 reddit-feed">
       <h5 class="feedheading"><i class="fa fa-reddit" aria-hidden="true"></i> Popular on R/Javascript</h5>
       <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
-      <div id="app"> </div>
+
     <script src="jsReddit.js"></script>
     </div>
 
 <!-- Relevant Javascript History, Column 3 (made of 4 units) -->
 
-    <div class="col-sm-5">
+    <div class="col-sm-5 middle">
           <h5 class="feedheading"><i class="fa fa-clock-o"></i> Relevant Javascript history</h5>
           <div style="overflow-y:auto;">
         <table>
@@ -126,31 +118,15 @@
 </div>
 
 <!-- Right section: Github Issues/History, Column 4 (made up for 3 units)-->
-    <div class="col-sm-3">
+    <div class="col-sm-3 github-feed">
   <h5 class="feedheading"><i class="fa fa-github" aria-hidden="true"></i> GITHUB ISSUES HISTORY </h5>
-    switch to gitlab
-ISSUESPULL REQUESTS
-Repo: adobe/brackets
-Issue #8671
-CSS and HTML not linking...
-
-Repo: atom/atom
-Issue #12644
-how can i connect my github account in atom
-
-Repo: smellaphant/github-slideshow
-Issue #2
-Your first contribution
-
-Repo: smellaphant/github-slideshow
-Issue #1
-Getting Started with GitHub</p>
+  <div id="githubApp"></div>
+    <script src="github.js"></script>
 
 
     </div>
   </div>
 </div>
-<body>
 
 </body>
 

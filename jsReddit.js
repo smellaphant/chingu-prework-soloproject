@@ -68,7 +68,7 @@ function displayReddit(javascriptReddit) {
   <br>
   `;
 }
-document.getElementById("app").innerHTML= `
+document.getElementById("app").innerHTML+= `
 ${javascriptReddit.map(displayReddit).join()}
 <br>
 `;

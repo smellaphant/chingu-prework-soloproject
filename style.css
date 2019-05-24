@@ -14,7 +14,7 @@ body {
 }
 
 .scrolly{
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .fa{
@@ -149,4 +149,32 @@ table{
 
 .javahistorytitle{
   color: #6272a4;
+}
+
+
+.reddit-feed-title{
+  color: #f8f8f2;
+}
+
+.reddit-posted-by{
+
+  color:#f1fa8c;
+}
+
+.reddit-score{
+  color:#6272a4;
+
+}
+.reddit-linkcomments{
+  color:#ff79c6;
+}
+
+.javascriptClock{
+  color: #6272a4;
+  text-align: center;
+  font-size: 50px;
+}
+
+.initabicon{
+  bottom:0;
 }

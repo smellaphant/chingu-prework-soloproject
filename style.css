@@ -1,0 +1,200 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #282a36;
+  font-family: 'Inconsolata', monospace;
+  font-size: 13px;
+  color: #6272a4;
+}
+
+.iconborder {
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  padding:3px 2px;
+}
+
+.scrolly{
+  overflow-y: scroll;
+}
+
+.fa{
+  color: #6c757d;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #6c757d;
+  height: 100%;
+  position: fixed;
+}
+
+li {
+  padding:10px;
+  text-align: left;
+}
+
+
+
+.blueicon{
+  color: rgb(139, 233, 253);
+
+}
+
+.blueiconborder{
+  background: rgb(139, 233, 253);
+  width: 20px;
+ height: 20px;
+ border-radius: 2px;
+ text-align: center;
+
+}
+.greenicon{
+  color: rgb(80, 250, 123);
+}
+.greeniconborder{
+  background: rgb(80, 250, 123);
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.orangeicon{
+  color: rgb(255, 184, 108);
+}
+.orangeiconborder{
+  background: rgb(255, 184, 108);
+  width: 20px;
+ height: 20px;
+ border-radius: 2px;
+ text-align: center;
+}
+.pinkicon{
+  color: rgb(255, 121, 198);
+}
+.pinkiconborder{
+  background: rgb(255, 121, 198);
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  text-align: center;
+}
+.purpleicon{
+  color: rgb(189, 147, 249);
+
+}
+.purpleiconborder{
+  background: rgb(189, 147, 249);
+  width: 20px;
+ height: 20px;
+ border-radius: 2px;
+ text-align: center;
+
+}
+.whiteicon{
+  color: rgb(248, 248, 242);
+}
+.whiteiconborder{
+  background: rgb(248, 248, 242);
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.yellowicon{
+  color: rgb(230, 219, 116);
+}
+.yellowiconborder{
+  background: rgb(230, 219, 116);
+
+  width: 20px;
+ height: 20px;
+ border-radius: 2px;
+ text-align: center;
+}
+
+.feedheading {
+  text-transform: uppercase;
+  text-align: center;
+  color: #8be9fd;
+}
+
+.fa-clock-o {
+  text-align: center;
+  color: #8be9fd;
+}
+
+.fa-reddit {
+  text-align: center;
+  color: #8be9fd;
+}
+
+.fa-github{
+  text-align: center;
+  color: #8be9fd;
+}
+
+.jvhistorylog{
+  text-align: right;
+  color: #999
+}
+
+table{
+  width: 100%;
+}
+
+.javahistorytitle{
+  color: #6272a4;
+}
+
+
+.reddit-feed-title{
+  color: #f8f8f2;
+}
+
+.reddit-posted-by{
+
+  color:#f1fa8c;
+}
+
+.reddit-score{
+  color:#6272a4;
+
+}
+.reddit-linkcomments{
+  color:#ff79c6;
+}
+
+.javascriptClock{
+  color: #6272a4;
+  text-align: center;
+  font-size: 50px;
+}
+
+.initabicon{
+  bottom:0;
+}
+
+.navbar{
+  flex-direction: column;
+  font-size: 13px;
+
+}
+.reddit-feed{
+
+  height: 100vh;
+  overflow: -moz-scrollbars-none;
+  ms-overflow-style: none;
+
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+}

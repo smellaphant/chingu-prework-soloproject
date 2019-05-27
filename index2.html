@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Initab </title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script type="text/javascript">
+      <!--
+
+      function updateClock ( )
+      {
+        var currentTime = new Date ( );
+
+        var currentHours = currentTime.getHours ( );
+        var currentMinutes = currentTime.getMinutes ( );
+
+
+        // Pad the minutes and seconds with leading zeros, if required
+        currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+
+
+        // Choose either "AM" or "PM" as appropriate
+        var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+
+        // Convert the hours component to 12-hour format if needed
+        currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+        // Convert an hours component of "0" to "12"
+        currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+        // Compose the string for display
+        var currentTimeString = currentHours + ":" + currentMinutes + " " + timeOfDay;
+
+        // Update the time display
+        document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+      }
+
+      // -->
+      </script>
+
+</head>
+<body>
+  <div class="row-fluid">
+
+<!-- Navigation bar, Column 1 (made of 2 units)-->
+    <div class="col-sm-2 text-uppercase navbar">
+      <ul>
+        <li class="list-group-flush blueicon "><span class="iconborder blueiconborder"><i class="fa fa-wrench icon" aria-hidden="true"></i></span>  Settings</li>
+        <li class="list-group-flush greenicon"><span class="iconborder greeniconborder"><i class="fa fa-code icon" aria-hidden=true></i></span> Gists</li>
+        <li class="list-group-flush orangeicon"><span class="iconborder orangeiconborder"><i class="fa fa-stack-overflow icon" aria-hidden="true"></i></span>     Stack Overflow</li>
+        <li class="list-group-flush pinkicon"><span class="iconborder pinkiconborder"><i class="fa fa-line-chart icon" aria-hidden="true"></i></span> Trending</li>
+        <li class="list-group-flush purpleicon"><span class="iconborder purpleiconborder"><i class="fa fa-pencil icon" aria-hidden="true"></i></span> Scratch Pad</li>
+        <li class="list-group-flush whiteicon"><span class="iconborder whiteiconborder"><i class="fa fa-lightbulb-o icon" aria-hidden="true"></i></span>   Playground</li>
+        <li class="list-group-flush yellowicon"><span class="iconborder yellowiconborder"><i class="fa fa-question icon"></i></span>    Help/Intro</li>
+      </ul>
+
+      <img src="https://initab.com/assets/images/initab_logo_white.png" href="initab.com" class="initabicon" width="42" height="42">
+    </div>
+<!-- Reddit for Javascript, Column 2 (made of 3 units)-->
+    <div class="col-sm-2 reddit-feed">
+      <h5 class="feedheading"><i class="fa fa-reddit" aria-hidden="true"></i> Popular on R/Javascript</h5>
+      <div id="app"> </div>
+
+    <script src="jsReddit.js"></script>
+    </div>
+
+<!-- Relevant Javascript History, Column 3 (made of 4 units) -->
+
+    <div class="col-sm-5 middle">
+          <h5 class="feedheading"><i class="fa fa-clock-o"></i> Relevant Javascript history</h5>
+          <div style="overflow-y:auto;">
+        <table>
+          <tr>
+          <td><i class="fa fa-youtube"></i>  </td>
+          <td class="javahistorytitle"> Javascript Tutorial For Beginners - YouTube</td>
+          <td> </td>
+          <td class="jvhistorylog">7 hours ago</td>
+          </tr>
+          <tr>
+          <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">  </td>
+          <td class="javahistorytitle"> Basic JavaScript</td>
+          <td>freeCodeCamp</td>
+          <td class="jvhistorylog">7 hours ago</td>
+          </tr>
+          <tr>
+          <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">  </td>
+          <td class="javahistorytitle"> Basic JavaScript</td>
+          <td>freeCodeCamp</td>
+          <td class="jvhistorylog">7 hours ago</td>
+          </tr>
+          <tr>
+          <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">  </td>
+          <td class="javahistorytitle"> Basic JavaScript</td>
+          <td>freeCodeCamp</td>
+          <td class="jvhistorylog">7 hours ago</td>
+          </tr>
+          <tr>
+          <td><img src="https://www.google.com/s2/favicons?domain=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">  </td>
+          <td class="javahistorytitle"> Basic JavaScript</td>
+          <td>freeCodeCamp</td>
+          <td class="jvhistorylog">7 hours ago</td>
+          </tr>
+        </table>
+
+        <div class="row-fluid">
+
+          <div class="span2 javascriptClock">
+                <span id="clock">&nbsp;</span>
+                <body onload="updateClock(); setInterval('updateClock()', 1000 )">
+          </div>
+
+        </div>
+
+  </div>
+
+</div>
+
+<!-- Right section: Github Issues/History, Column 4 (made up for 3 units)-->
+    <div class="col-sm-3 github-feed">
+  <h5 class="feedheading"><i class="fa fa-github" aria-hidden="true"></i> GITHUB ISSUES HISTORY </h5>
+  <div id="githubApp"></div>
+    <script src="github.js"></script>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

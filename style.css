@@ -243,9 +243,9 @@ table{
 
 .javascriptScroll{
   float: left;
-    height: 80%;
+
     overflow-y: auto;
-height: 100vh;
+height: 80vh;
 overflow: -moz-scrollbars-none;
 -ms-overflow-style: none;
 

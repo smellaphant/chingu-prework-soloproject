@@ -6,14 +6,14 @@ body {
   font-size: 13px;
   color: #6272a4;
   padding:0;
+  overflow:hidden;
+
 }
 
 .iconborder {
-  border-top-left-radius:2px;
-  border-top-right-radius:2px;
-  border-bottom-left-radius:2px;
-  border-bottom-right-radius:2px;
+
   padding:3px 2px;
+  border-radius: 50%;
 }
 
 .scrolly{
@@ -43,6 +43,12 @@ color: #FFFFFF;
 padding: 0.05em 0.07em;
 }
 
+.navbar1{
+    background-color: #454759;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 
 ul {
   list-style-type: none;
@@ -215,8 +221,9 @@ table{
 .navbar{
 
   font-size: 13px;
-  height: 40%;
-  justify-content: space-around;
+  height: 100%;
+
+
 
 }
 .reddit-feed{
@@ -235,10 +242,14 @@ table{
 .javascriptScroll{
   float: left;
     height: 80%;
-    overflow: scroll;
+    overflow-y: auto;
+height: 100vh;
+overflow: -moz-scrollbars-none;
+-ms-overflow-style: none;
+
 }
 
-.javascriptScroll:-webkit-scrollbar{
+::-webkit-scrollbar{
               width: 0px;
 }
 

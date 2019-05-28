@@ -70,6 +70,7 @@ function displayJava(javascriptJSHistory) {
     <td class="jvhistorylog">${javascriptJSHistory.Author}</td>
     </tr>
     <br>
+    <br>
   `;
 }
 document.getElementById("JSapp").innerHTML+= `
